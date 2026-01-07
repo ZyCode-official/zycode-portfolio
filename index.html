@@ -1,190 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZyCode-Hacker Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?
-family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
-rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#071013">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZyCode | Hacker Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="matrix-wrap">
-        <canvas id="matrix-can"></canvas>
+
+<canvas id="matrix"></canvas>
+
+<nav>
+  <div class="logo">ZyCode
+    <a href="www.youtube.com/@ZyCodes" target="_blank">
+    <img src="Zycode1.png" alt="ZyCode Logo" style="width: 40px;" class="nav-image">
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#youtube">YouTube</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>ZyCode<span class="cursor">『Z』</span></h1>
+    <div class="role" id="role"></div>
+
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="#contact" class="btn">Contact</a>
+  </div>
+
+  <div class="terminal">
+    <div class="term-top">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
     </div>
-    <header class="site-header">
-        <nav class="nav container">
-            <div class="nav-left">
-                <a href="#home">Zy<span class="neon">Code</span></a>
-            </div>
-            <div class="nav-right"id="navRight">
-                <ul class="nav-list">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#topics">TOPICS</a></li>
-                    <li><a href="#videos">VIDEOS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
-            <button class="nav-toggle" id="navToggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-    <section id="home"class="hero coontainer">
-        <div class="hero-left">
-            <p class="pre">Hi,my handle is ZyCode</p>
-            <h1 class="hero-title">
-                <span id="display-name">ZyCode</span><span class="cursor">█</span>
-            </h1>
-            <p class="hero-role"id="typed-role">Coder:Gamer:Developer</p>
-            <div class="hero-cta">
-                <a href="#projects"class="btn primary">VIEW PROJECTS</a>
-                <a href="#videos"class="btn outline">My Youtube</a>
-            </div>
-            <p class="hero-sub">Freelancer: UI tinkerer : Mini-tools creator</p>
-        </div>
-        <div class="hero-right">
-            <div class="terminal">
-                <div class="term-top">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                    <span class="term-label">ZyCode@Portfolio:~$</span>
-                </div>
-                <div class="term-body">
-                    <pre id="term-output">//Welcome to ZyCode's Portfolio//Loading modules...</pre>
+    <div class="term-body" id="terminal">
+      Booting ZyCode portfolio...
+    </div>
+  </div>
+</section>
 
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hi... 
+    <pre>   I'm Ashish, a passionate coder, gamer, and vlogger.</pre>
+    <br><br>
+   
+    This website shows my real journey as a coder, gamer and a vloger.
+    <br>
+    Here you’ll find hacker-style UI, neon effects, and projects
+    I build while learning and growing with ZyCode.
+  </p>
+</section>
 
-                </div>
-                <div class="term-actions">
-                    <button id="runDemo"class="btn small">Run Demo</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="about"class="section container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p class="lead">
-                    I'm Rion - a coder with a gamer soul.
-                    I'm a passionate developer with expertise in web technologies, UI design, and creating innovative tools. My journey in tech began with a curiosity for how things work, leading me to explore programming and design.</p>
-                <p id="why-visit">
-                    Why visit my portfolio? Here, you'll find a showcase of my projects that blend functionality with aesthetic appeal. From sleek web applications to engaging mini-tools, each project reflects my commitment to quality and user experience.
-                </p>
-                <ul class="about-list">
-                    <li>Languages:C, Python, HTML, CSS, JavaScript</li>
-                    <li>Interests:UI, Animations, Game UI, Tools</li>
-                    <li>Available for:Collabs, Tutorials, Mini projects</li>
-                </ul>
-                <div class="socials">
-                    <a href="#"class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"class="icon"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"class="icon"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"class="icon"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="images/profile.jpg" alt="ZyCode Profile Picture">
-            </div>
-        </div>
-    </section>
-    <section id="skills"class="section container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill>
-                <h4>CSS</h4>
-                <div class="skill-bar">
-                    <div class="skill-fill css"></div>
-            </div>
-            <div class="skill">
-                <h4>JavaScript</h4>
-                <div class="skill-bar">
-                    <div class="skill-fill js"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h4>Python</h4>
-                <div class="skill-bar">
-                    <div class="skill-fill python"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h4>UI Design</h4>
-                <div class="skill-bar">
-                    <div class="skill-fill ui"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <h4>C</h4>
-                <div class="skill-bar">
-                    <div class="skill-fill c"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="topics"class="section container">
-        <h2 class="section-title">Topics I Cover</h2>
-        <div class="topics"id="topicsContainer"></div>
-        <p class="muted">CLick a topic to filter projects.</p>
-    </section>
-    <section id="projects"class="section container">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-controls">
-            <div class="project-stats">Showing<span id="projectsCount">0</span>projects</div>
-            <div class="projects-actions">
-                <button id="btnAddDemo"class="btn outline small">Add Demo Project</button>
-                <button id="btnClearDemo"class="btn outline small">Clear Demo</button>
-            </div>
-        </div>
-        <div id="projectsGrid"class="projects-grid"></div>
-        <div class="projectEmpty"class="proejcts-empty"hidden>
-            <h3>Available Soon</h3>
-            <p>Stay tuned for upcoming projects!</p>
-            <a href="#videos" class="btn primary small">My Youtube</a>
-        </div>
-    </section>
-    <section id="videos"class="section container">
-        <h2 class="section-title">Youtube-ZyCode</h2>
-        <div class="youtube-header">
-            <div>
-                <p class="muted">Subscribe for Tutorials</p>
-                <a href="#"class="btn primary"><i class="fa-brands fa-youtube"></i>Subscribe</a>
-            </div>
-            <p class="muted">Replace sample IDs in script.js</p>
-        </div>
-        <div id="videoGrid"class="video-grid"></div>
-    </section>
-    <section id="contact"class="section container">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-grid">
-            <div class="contact-left">
-                <p class="lead">Want to collaborate or have any questions? Feel free to reach out!</p>
-                <ul class="contact-list">
-                    <li>Email: zycode.official@gmail.com</li>
-                </ul>
-            </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <input id="cname"type="text"placeholder="Your Name"required>
-                    <input id="cemail"type="email"placeholder="Your Email"required>
-                    <textarea id="cmessage"rows="5"placeholder="Your Message"required></textarea>
-                    <div class="contact-actions">
-                        <button id="btnSend" type="button" class="btn primary">Send</button>
-                        <span id="contactStatus"class="muted"></span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer class="site-footer">
-        <p>©<span id="Year"></span>ZyCode-Built with neon vibes</p>
-    </footer>
-    <script src="script.js"></script>
+<section id="skills">
+  <h2>Skills</h2>
+
+  <label>HTML</label>
+  <div class="bar"><div class="fill" style="width:90%"></div></div>
+
+  <label>CSS</label>
+  <div class="bar"><div class="fill" style="width:80%"></div></div>
+
+  <label>JavaScript</label>
+  <div class="bar"><div class="fill" style="width:65%"></div></div>
+  <label>Python</label>
+  <div class="bar"><div class="fill" style="width:50%"></div></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <h3>Available Soon</h3>
+    <p>Projects are soon to be uploaded.</p>
+  </div>
+</section>
+
+<section id="youtube">
+  <h2>YouTube – ZyCode</h2>
+  <div class="video-grid">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/74RosCfs54I?si=K6VvlJkctBUoZe0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/doopXLZQ9OY?si=lsegl0o7RaFcdHUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vpuoV-7Tp28?si=JDHBpeOiJUBh7IeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-box">
+    <p>Want to collaborate or have any questions?</p>
+    <p>If you have any suggestions or feedback, feel free to reach out!</p>
+
+    <a class="btn primary"
+       href="mailto:zycode.official@gmail.com?subject=Contact from ZyCode Portfolio">
+       Send Email
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 ZyCode | Built with neon vibes
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
